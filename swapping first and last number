@@ -1,0 +1,18 @@
+#python program for swapping first and last numbers from the list
+
+# Swap function
+def swaplist(list):
+
+# Storing the first and last element as a pair in a tuple variable get
+    get = list[0], list[-1]
+
+#unpacking those elements
+    list[-1], list[0] = get
+
+    return list
+
+#driver code
+
+newlist = [12, 15, 18, 25, 35]
+
+print(swaplist(newlist))
